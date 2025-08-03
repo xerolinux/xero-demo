@@ -246,6 +246,7 @@ qemu-hw-display-qxl
 
 ### Input
 
+orca
 piper
 fprintd
 libinput
