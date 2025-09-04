@@ -34,6 +34,7 @@ file_permissions=(
   ["/usr/local/bin/services"]="0:0:755"
   ["/usr/local/bin/xdconf"]="0:0:755"
   ["/usr/local/bin/ucode"]="0:0:755"
+  ["/usr/local/bin/demo"]="0:0:755"
   ["/usr/local/bin/fsprogschk"]="0:0:755"
   ["/usr/local/bin/gpdetect"]="0:0:755"
   ["/usr/local/bin/cala-launch"]="0:0:755"

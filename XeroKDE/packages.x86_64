@@ -4,112 +4,103 @@
 
 ### Base stuff
 
-archiso
-b43-fwcutter
 base
+archiso
 base-devel
+b43-fwcutter
 
-### More Stuff
+### FS Tools
 
-bind
-bolt
-brltty
-btrfs-progs
-clonezilla
-cloud-init
-darkhttpd
-ddrescue
-dhclient
-dhcpcd
-diffutils
-dmidecode
-dmraid
-dnsmasq
-dosfstools
-e2fsprogs
-edk2-shell
-efibootmgr
-espeakup
-ethtool
-exfatprogs
-f2fs-tools
-fatresize
-foot-terminfo
-fd
-fsarchiver
-gpart
-gpm
-gptfdisk
-hdparm
-hyperv
-irssi
-jfsutils
-kitty-terminfo
-ldns
-less
-lftp
-libfido2
-libusb-compat
-lsscsi
-lvm2
-lynx
-man-db
-man-pages
-mc
-mdadm
-memtest86+
-memtest86+-efi
-mmc-utils
-mtools
-nano
-nbd
-ndisc6
-nfs-utils
-nilfs-utils
-nmap
-ntfs-3g
-nvme-cli
-open-iscsi
-openconnect
-openpgp-card-tools
-openssh
-openvpn
-partclone
-parted
-partimage
-pcsclite
-ppp
-pptpclient
-pv
-reflector
 rsync
-screen
 sdparm
-sequoia-sq
-sg3_utils
-smartmontools
-sof-firmware
-squashfs-tools
-sudo
-syslinux
-tcpdump
-terminus-font
-testdisk
-tldr
-tmux
-tpm2-tools
+ntfs-3g
+gptfdisk
+xfsprogs
 tpm2-tss
 udftools
-usb_modeswitch
+syslinux
+fatresize
+nfs-utils
+e2fsprogs
+dosfstools
+exfatprogs
+tpm2-tools
+fsarchiver
+squashfs-tools
+
+### HDD Tools
+
+gpart
+dmraid
+parted
+hdparm
 usbmuxd
 usbutils
-vpnc
-wireguard-tools
+testdisk
+ddrescue
+timeshift
+partclone
+partimage
+clonezilla
+open-iscsi
+memtest86+-efi
+usb_modeswitch
+
+### Terminal
+
+fd
+nano
+tmux
+brltty
+msedit
+nvme-cli
+terminus-font
+foot-terminfo
+kitty-terminfo
+
+### Other crap
+
+pv
+mc
+gpm
+nbd
+lvm2
+bolt
+bind
+less
+lynx
+sudo
+tldr
+nmap
+irssi
+mdadm
 wvdial
-xdotool
-xfsprogs
+hyperv
+mtools
+lsscsi
+ndisc6
+screen
+man-db
 xl2tpd
+tcpdump
+ethtool
+xdotool
+pcsclite
+espeakup
+libfido2
 xdg-utils
+man-pages
+diffutils
+mmc-utils
+sg3_utils
+dmidecode
+efibootmgr
+sequoia-sq
+edk2-shell
+sof-firmware
+libusb-compat
+smartmontools
+wireguard-tools
 
 ### Kernel/Firmware
 
@@ -117,8 +108,6 @@ linux
 linux-atm
 linux-headers
 linux-firmware-intel
-linux-firmware-nvidia
-linux-firmware-radeon
 linux-firmware-amdgpu
 
 ### Grub Stuff
@@ -149,10 +138,8 @@ chaotic-mirrorlist
 
 ### XeroLinux Build
 
-
 preload
 xlapit-cli
-upd72020x-fw
 desktop-config
 
 ### Build Stuff
@@ -177,6 +164,7 @@ mkinitcpio-nfs-utils
 
 ### Tools
 
+mpv
 hblock
 cryptsetup
 brightnessctl
@@ -197,6 +185,17 @@ xorg-apps
 xorg-xinit
 xorg-server
 xorg-xwayland
+
+### Essentials
+
+xmlto
+ckbcomp
+kpmcore
+yaml-cpp
+kirigami
+boost-libs
+polkit-gnome
+gtk-update-icon-cache
 
 #######################################################
 ###                  Hardware                       ###
@@ -277,18 +276,31 @@ bluez-tools
 bluez-plugins
 bluez-hid2hci
 
-### Networking tools
+### Networking
 
 iw
 iwd
+ppp
+lftp
+ldns
 avahi
 samba
 netctl
+dhcpcd
+openssh
+openvpn
+dnsmasq
+dhclient
 openldap
 nss-mdns
 smbclient
 net-tools
 openresolv
+darkhttpd
+reflector
+pptpclient
+cloud-init
+openconnect
 traceroute
 b43-fwcutter
 modemmanager
@@ -297,16 +309,8 @@ nm-cloud-setup
 wireless-regdb
 wireless_tools
 wpa_supplicant
+openpgp-card-tools
 systemd-resolvconf
-networkmanager-vpnc
-networkmanager-pptp
-networkmanager-l2tp
-network-manager-sstp
-network-manager-applet
-networkmanager-openvpn
-networkmanager-strongswan
-networkmanager-openconnect
-mobile-broadband-provider-info
 
 ### Virtual Machine
 
@@ -326,6 +330,7 @@ figlet
 ostree
 lolcat
 numlockx
+localsend
 lm_sensors
 appstream-glib
 lib32-lm_sensors
@@ -597,7 +602,6 @@ audiocd-kio
 ### KDE Applications Selection
 ### https://archlinux.org/groups/x86_64/kde-applications/
 
-cervisia
 akregator
 
 ### KDE Wayland
