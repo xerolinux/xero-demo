@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="xerolinux-cosmic"
+iso_name="xero-cosmic-demo"
 iso_label="XERO_Cosmic_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="Xero-Cosmic <https://xerolinux.xyz>"
 iso_application="XeroLinux Live/Rescue CD"
