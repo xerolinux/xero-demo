@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="xero-cosmic-demo"
+iso_name="xerolinux-cosmic"
 iso_label="XERO_Cosmic_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="Xero-Cosmic <https://xerolinux.xyz>"
 iso_application="XeroLinux Live/Rescue CD"
@@ -33,8 +33,8 @@ file_permissions=(
   ["/usr/local/bin/xerolinux-final"]="0:0:755"
   ["/usr/local/bin/services"]="0:0:755"
   ["/usr/local/bin/ucode"]="0:0:755"
+  ["/usr/local/bin/demo"]="0:0:755"
   ["/usr/local/bin/fsprogschk"]="0:0:755"
   ["/usr/local/bin/nouveau"]="0:0:755"
   ["/usr/local/bin/gpdetect"]="0:0:755"
-  ["/usr/local/bin/cala-launch"]="0:0:755"
   )
