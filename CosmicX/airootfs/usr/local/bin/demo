@@ -10,7 +10,7 @@ convert "$LOGO" -resize 300x300 "$RESIZED_LOGO"
 # Main message
 MESSAGE="<b>XeroLinux Demo :</b>\n\nThis Demo is for testing purposes only, since the installer is not included and cow-space is pretty limited (100MiB), so you won’t be able to update or install big packages. It's just for testing, so don’t try updating, it won’t work because of the space limit. Furthermore, Live Environment is not persistent, installing anything that requires a reboot, like Drivers is therefore impossible, keep that in mind before attempting to do so.
 
-Finally, this is is still work-in-progress, and the DE is still in <b>Alpha Stages</b>. No Unlocked ISO exists as of yet."
+Finally, this is still work-in-progress, and the DE is still in <b>Alpha Stages</b>. No Unlocked ISO exists as of yet."
 
 # Loop the dialog to prevent exit on button click
 while true; do
