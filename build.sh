@@ -17,7 +17,7 @@ echo
 
 echo "Please select what you want to do :"
 echo
-echo "1) Build XeroLinux (KDE)"
+echo "1) Build XeroLinux (Demo)"
 echo "2) Git Pull Latest Changes"
 echo "3) Visit Project's Dev Github"
 echo
@@ -44,12 +44,12 @@ case "$choice" in
     ;;
 esac
 
-isoLabel="xerolinux-$(date +"%Y.%m")-x86_64.iso"
+isoLabel="xerolinux-demo-$(date +"%Y.%m")-x86_64.iso"
 
 # Setup paths relative to current directory
 WORKDIR=$(pwd)
 buildFolder="${WORKDIR}/build"
-outFolder="${WORKDIR}/XeroISO/${outputSubFolder}"
+outFolder="${WORKDIR}/XeroISO/"
 
 archisoRequiredVersion="archiso 85-1"
 archisoVersion=$(sudo pacman -Q archiso 2>/dev/null || echo "not-installed")
