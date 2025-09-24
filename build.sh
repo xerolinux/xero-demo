@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e xero-cosmic-demo
+#set -e
 ##################################################################################################################
 # Author: DarkXero (Unified build script)
 # Website: https://xerolinux.xyz
@@ -7,19 +7,19 @@
 clear
 echo
 tput setaf 2
-echo "################################################################### "
-echo "            Welcome to the Unified XeroLinux ISO Builder            "
-echo "################################################################### "
+echo "########################################################### "
+echo "            Welcome to the XeroLinux ISO Builder            "
+echo "########################################################### "
 tput sgr0
 echo
 
 # --- Select Profile ---
 
-echo "Please select which ISO to build:"
+echo "Please select what you want to do :"
 echo
-echo "1) XeroLinux KDE Demo"
-echo "2) XeroLinux Gnome Demo"
-echo "3) XeroLinux Cosmic (Alpha) Demo"
+echo "1) Build XeroLinux (KDE)"
+echo "2) Git Pull Latest Changes"
+echo "3) Visit Project's Dev Github"
 echo
 read -p "Enter selection (1, 2 or 3): " choice
 
@@ -27,20 +27,16 @@ case "$choice" in
   1)
     desktop="kde"
     dmDesktop="plasma"
-    profileFolder="XeroKDE"
+    profileFolder="Xero"
     outputSubFolder="KDE"
     ;;
   2)
-    desktop="gnome"
-    dmDesktop="gnome"
-    profileFolder="XeroG"
-    outputSubFolder="Gnome"
+    git pull
+    exit 0
     ;;
   3)
-    desktop="cosmic"
-    dmDesktop="cosmic"
-    profileFolder="CosmicX"
-    outputSubFolder="Cosmic"
+    xdg-open "https://github.com/XeroLinuxDev"
+    exit 0
     ;;
   *)
     echo "Invalid selection. Exiting."
@@ -48,7 +44,7 @@ case "$choice" in
     ;;
 esac
 
-isoLabel="xero-${desktop}-demo-$(date +"%Y.%m")-x86_64.iso"
+isoLabel="xerolinux-$(date +"%Y.%m")-x86_64.iso"
 
 # Setup paths relative to current directory
 WORKDIR=$(pwd)
