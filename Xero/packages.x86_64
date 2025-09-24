@@ -26,6 +26,8 @@ dosfstools
 exfatprogs
 tpm2-tools
 fsarchiver
+#bcachefs-dkms
+#bcachefs-tools
 squashfs-tools
 
 ### HDD Tools
@@ -107,8 +109,6 @@ wireguard-tools
 linux
 linux-atm
 linux-headers
-linux-firmware-intel
-linux-firmware-amdgpu
 
 ### Grub Stuff
 
@@ -164,10 +164,10 @@ mkinitcpio-nfs-utils
 
 ### Tools
 
-mpv
 hblock
 cryptsetup
 brightnessctl
+switcheroo-control
 power-profiles-daemon
 
 ### Bash & Other
@@ -210,6 +210,8 @@ intel-ucode
 ### Video
 
 mesa
+amd-drv
+intel-drv
 autorandr
 mesa-utils
 lib32-mesa
@@ -226,6 +228,7 @@ onboard
 fprintd
 libinput
 gestures
+cameractrls
 xf86-input-void
 xf86-input-evdev
 iio-sensor-proxy
@@ -237,13 +240,6 @@ xf86-input-synaptics
 libinput-gestures-qt
 xf86-input-elographics
 
-### Printers & Scanner support
-
-hplip
-print-manager
-printer-support
-scanner-support
-
 ### G-Streamer
 
 gstreamer
@@ -252,6 +248,7 @@ gst-plugins-bad
 gst-plugins-base
 gst-plugins-ugly
 gst-plugins-good
+gst-plugins-espeak
 gst-plugin-pipewire
 
 ## Pipewire Audio
@@ -303,12 +300,12 @@ cloud-init
 openconnect
 traceroute
 b43-fwcutter
-modemmanager
 networkmanager
 nm-cloud-setup
 wireless-regdb
 wireless_tools
 wpa_supplicant
+modemmanager-qt
 openpgp-card-tools
 systemd-resolvconf
 
@@ -372,10 +369,6 @@ gnome-themes-extra
 kde-wallpapers
 tela-circle-icon-theme-purple
 
-### Browser
-
-falkon
-
 ### Multimedia
 
 ffmpeg
@@ -406,7 +399,12 @@ gvfs-afc
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
+gvfs-goa
+gvfs-wsdd
+gvfs-dnssd
+gvfs-google
 gvfs-gphoto2
+gvfs-onedrive
 
 ### Tumbler
 
@@ -453,7 +451,6 @@ gnustep-base
 
 ## Complements
 
-amarok
 pacseek
 parallel
 xsettingsd
@@ -675,6 +672,7 @@ node-gyp
 intltool
 graphviz
 pkgstats
+pciutils
 inetutils
 downgrade
 s3fs-fuse
