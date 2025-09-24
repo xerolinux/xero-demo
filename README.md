@@ -13,10 +13,10 @@ This repo contains code for **XeroLinux Demos**. These ISOs are for exploring on
 **Build Instructions**
 
 ```Bash
-git clone https://github.com/XeroLinuxDev/xero-demo
-cd xero-demo/ && ./build.sh
+git clone https://github.com/XeroLinuxDev/XeroDemo
+cd XeroDemo/ && ./build.sh
 ```
 
-That's it. You will find ISOs inside `XeroISO/SpinName`
+That's it. You will find ISOs inside `XeroISO/`
 
 Thanks for the support. ❤️‍🔥
