@@ -51,7 +51,7 @@ WORKDIR=$(pwd)
 buildFolder="${WORKDIR}/build"
 outFolder="${WORKDIR}/XeroISO/"
 
-archisoRequiredVersion="archiso 85-1"
+archisoRequiredVersion="archiso 86-1"
 archisoVersion=$(sudo pacman -Q archiso 2>/dev/null || echo "not-installed")
 
 personalrepo=false  # Set to true if you want to add personal repo packages
